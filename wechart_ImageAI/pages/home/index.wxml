@@ -1,0 +1,21 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">智能AI</view>
+</cu-custom>
+<view class="margin-tb-sm text-center">
+  <button class="cu-btn round bg-green" role="button" aria-disabled="false" bindtap="chooseimage">上传图片</button>
+</view>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <image src="{{tempFilePaths }}" catchTap="chooseImageTap" mode="aspectFit" style="width: 100%; height: 450rpx" />
+  <view class='text-center margin-bottom text-lg  text-grey'></view>
+  <view class='text-content' wx:if="{{text!=''}}">
+    <view class='margin-top-sm'>
+      <view class="cu-tag bg-red">{{categoryName}}</view>
+      <view class="cu-tag bg-blue">{{text}}</view>
+    </view>
+    <view class='margin-top-sm'>{{description}}</view>
+  </view>
+  <view class='text-content' wx:else>
+    <view class='margin-top-sm'>智能垃圾分类AI是由晨光科力普CIP团队打造</view>
+    <view class='margin-top-sm'>本项目完全免费</view>
+  </view>
+</view>

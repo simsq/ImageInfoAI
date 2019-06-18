@@ -1,0 +1,23 @@
+<home wx:if="{{PageCur=='home'}}"></home> 
+ 
+<about wx:if="{{PageCur=='about'}}"></about>
+
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action {{PageCur=='home'?'text-green':'text-gray'}}" bindtap="NavChange" data-cur="home">
+    <view class='cuIcon-cu-image '>
+      <text class="cuIcon-home lg"></text>
+    </view>
+    <view>
+      <text>首页</text>
+    </view>
+  </view> 
+    
+  <view class="action {{PageCur=='about'?'text-green':'text-gray'}}" bindtap="NavChange" data-cur="about">
+    <view class='cuIcon-cu-image'>
+      <text class="cuIcon-people lg"></text>
+    </view>
+    <view>
+      <text>关于</text>
+    </view>
+  </view>
+</view>

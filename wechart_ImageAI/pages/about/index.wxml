@@ -1,0 +1,13 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">关于我们</view>
+</cu-custom>
+
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <image src="{{tempFilePaths }}" catchTap="chooseImageTap" mode="aspectFit" style="width: 100%; height: 450rpx" />
+  <view class='text-center margin-bottom text-lg  text-grey'></view>  
+  <view class='text-content'>
+    <view class='margin-top-sm'>古人学问无遗力，少壮工夫老始成。</view>
+    <view class='margin-top-sm'>纸上得来终觉浅，绝知此事要躬行。</view>
+    <view class='margin-top-sm'>陆游</view>
+  </view>
+</view>
