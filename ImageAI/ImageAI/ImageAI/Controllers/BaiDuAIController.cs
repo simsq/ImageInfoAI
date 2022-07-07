@@ -12,9 +12,9 @@ namespace ImageAI.Controllers
     [ApiController]
     public class BaiDuAIController : Controller
     {
-        private readonly string APP_ID = "16546407";
-        private readonly string API_KEY = "nhqDlGK6lMqxVOYNWdGBZSo7";
-        private readonly string SECRET_KEY = "h9Ih47YAI6pOSBXNDS145EqEmz2SqLwj";
+        private readonly string APP_ID = "165464027";
+        private readonly string API_KEY = "XXXX";
+        private readonly string SECRET_KEY = "XXXX";
 
         private readonly ImageClassify imageClassify = null;
         public BaiDuAIController()
